@@ -2,16 +2,16 @@ body{
     background-color:#2F4538;
 }
 .main{
-margin-left: auto;
-margin-right: auto;
-width:35%;
-display:grid;
-grid-template-columns: repeat(1fr,20);
-  grid-template-rows: auto;
-grid-template-areas: 
-"picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture"
-"insc insc insc insc insc insc insc insc insc insc insc insc insc insc insc insc customRadio4 customRadio3 customRadio2 customRadio1";
-grid-row-gap: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    width:35%;
+    display:grid;
+    grid-template-columns: repeat(1fr,20);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture"
+        "insc insc insc insc insc insc insc insc insc insc insc insc insc insc insc insc customRadio4 customRadio3 customRadio2 customRadio1";
+    grid-row-gap: 1vh;
 }
 
 .content{
@@ -32,7 +32,10 @@ grid-row-gap: 1vh;
 }
 .slide{
     width: 25%;
-    transition: all 0.6s ease;
+    transition: all 1s ease-in-out;
+}
+.s1{
+    margin-left: 0;
 }
 img{
     height: 100%;
@@ -65,7 +68,20 @@ img{
 .inscription{
     color:#71FA9F;
     width:25%;
-    transition: all 0.6s ease;
+    transition: all 1s ease-in-out;
+}
+
+.customRadio{
+    border: 1px solid #73AD21;
+    cursor: pointer;
+    width:10px;
+    height:10px;
+    border-radius: 10px;
+    align-self:flex-end;
+}
+input[type="radio"]:checked+label {
+    background-color: green;
+    color: white;
 }
 .customRadio1{
     grid-area: customRadio1;
@@ -79,22 +95,7 @@ img{
 .customRadio4{
     grid-area: customRadio4;
 }
-.customRadio{
-    border: 1px solid #73AD21;
-    color:red;
-    cursor: pointer;
-    width:10px;
-    height:10px;
-    border-radius: 10px;
-    align-self:flex-end;
-}
-input[type="radio"]:checked+label {
-    background-color: green;
-    color: white;
-}
-.s1{margin-left: 0;
 
-}
 .customRadio:hover{
     background-color: rgb(94, 175, 94);;
 }
