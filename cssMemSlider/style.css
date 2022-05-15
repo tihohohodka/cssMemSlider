@@ -10,8 +10,9 @@ body{
     grid-template-rows: auto;
     grid-template-areas: 
         "picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture"
-        "insc insc insc insc insc insc insc insc insc insc insc insc insc insc insc insc customRadio4 customRadio3 customRadio2 customRadio1";
-    grid-row-gap: 1vh;
+        "insc insc insc insc insc insc insc insc insc insc insc insc insc insc insc insc customRadio1 customRadio2 customRadio3 customRadio4";
+    grid-row-gap: 2vh;
+    align-items: center;
 }
 
 .content{
@@ -78,21 +79,25 @@ img{
     border-radius: 10px;
     align-self:flex-end;
 }
-input[type="radio"]:checked+label {
-    background-color: green;
-    color: white;
+input[type="radio"]:checked+label>div{
+   background-color: aliceblue;
+
 }
 .customRadio1{
     grid-area: customRadio1;
+
 }
 .customRadio2{
     grid-area: customRadio2;
+
 }
 .customRadio3{
     grid-area: customRadio3;
+
 }
 .customRadio4{
     grid-area: customRadio4;
+
 }
 
 .customRadio:hover{
@@ -154,10 +159,10 @@ input[name="memRadio"] {
           grid-template-rows: auto;
         grid-template-areas: 
         "picture picture picture picture picture picture picture picture picture picture picture picture picture picture picture"
-        ". . . . customRadio4 . customRadio3 . customRadio2 . customRadio1 . . . ."
+        ". . . . customRadio1 . customRadio2 . customRadio3 . customRadio4 . . . ."
         "insc insc insc insc insc insc insc insc insc insc insc insc insc insc insc";
         
-        grid-row-gap: 1vh;
+        grid-row-gap: 2vh;
         }
 
 
