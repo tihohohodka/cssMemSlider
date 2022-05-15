@@ -29,13 +29,11 @@ body{
     width:400%;
     height:100%;
     display:flex;
+    transition: all 1s ease-in-out;
 }
 .slide{
     width: 25%;
-    transition: all 1s ease-in-out;
-}
-.s1{
-    margin-left: 0;
+
 }
 img{
     height: 100%;
@@ -64,11 +62,12 @@ img{
     height:100%;
     display:flex;
     justify-self: flex-start;
+    transition: all 1s ease-in-out;
 }
 .inscription{
     color:#71FA9F;
     width:25%;
-    transition: all 1s ease-in-out;
+
 }
 
 .customRadio{
@@ -99,6 +98,9 @@ input[type="radio"]:checked+label {
 .customRadio:hover{
     background-color: rgb(94, 175, 94);;
 }
+.customRadio:active{
+    background-color: red;
+}
 input[name="memRadio"] {
     position: absolute;
     visibility: hidden;
@@ -108,35 +110,35 @@ input[name="memRadio"] {
     visibility: hidden;
  }
 
- #sr1:checked ~.slider .slides .s1 {
-    margin-left: 0;
+ #sr1:checked ~.slider .slides {
+    transform:translate(0);
  }
  
- #sr2:checked ~.slider .slides .s1 {
-    margin-left: -25%;
+ #sr2:checked ~.slider .slides {
+    transform:translate(-25%);
  }
  
- #sr3:checked ~.slider .slides .s1{
-    margin-left: -50%;
+ #sr3:checked ~.slider .slides {
+    transform:translate(-50%);
  }
  
- #sr4:checked ~.slider .slides .s1 {
-    margin-left: -75%;
+ #sr4:checked ~.slider .slides {
+    transform:translate(-75%);
  }
- #sr1:checked ~.controlPanel .inscriptonHolder .inscriptions .s1 {
-    margin-left: 0;
- }
- 
- #sr2:checked ~.controlPanel .inscriptonHolder .inscriptions .s1 {
-    margin-left: -25%;
+ #sr1:checked ~.controlPanel .inscriptonHolder .inscriptions{
+    transform:translate(0);
  }
  
- #sr3:checked ~.controlPanel .inscriptonHolder .inscriptions .s1{
-    margin-left: -50%;
+ #sr2:checked ~.controlPanel .inscriptonHolder .inscriptions{
+    transform:translate(-25%);
  }
  
- #sr4:checked ~.controlPanel .inscriptonHolder .inscriptions .s1 {
-    margin-left: -75%;
+ #sr3:checked ~.controlPanel .inscriptonHolder .inscriptions{
+    transform:translate(-50%);
+ }
+ 
+ #sr4:checked ~.controlPanel .inscriptonHolder .inscriptions{
+    transform:translate(-75%);
  }
  
 
